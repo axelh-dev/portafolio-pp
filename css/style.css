@@ -1,0 +1,266 @@
+:root {
+  --color-dark: #111F4D;
+  --text-color-light: #F2F4F7;
+}
+
+
+.img-home img {
+  max-width: 220px;
+}
+
+.nav-custom .navbar-custom .nav-list a {
+  font-size: 1.1rem;
+  color: var(--text-color-light);
+  font-weight: 600;
+}
+
+.nav-custom .navbar-custom .nav-list a:hover {
+  color: #E43A19;
+}
+
+.navbar .nav-custom .navbar-custom {
+  align-items: center;
+  margin: 0 auto;
+}
+
+.icon-buton {
+  color: var(--text-color-light);
+  font-size: 2rem;
+}
+
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid salmon;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger .nav-checkbox {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #F2F4F7;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger .nav-checkbox:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger .nav-checkbox:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger .nav-checkbox:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked~.nav-checkbox:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked~.nav-checkbox:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked~.nav-checkbox:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  --background: #F2F4F7;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #E43A19;
+  background: var(--background);
+  transition: .5s;
+}
+
+input:checked+.slider {
+  background-color: #F2F4F7;
+}
+
+input:checked+.slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #E43A19;
+}
+
+main {
+  background: #F2F4F7;
+}
+
+.sec-home-mi {
+  height: 90vh;
+}
+
+.contain-hand {
+  animation: moveUpAndDown 800ms ease-in-out infinite;
+}
+
+.hand-sec {
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  transform: rotate(180deg);
+}
+
+.bi-hand-index-fill {
+  font-size: 2.5rem;
+  color: #111F4D;
+}
+
+@keyframes moveUpAndDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 2.4em;
+  color: black;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #402d2d;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-family: Baskerville, serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+
+.group-butons .btn-custom {
+  padding: .7rem;
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: var(--color-dark);
+  color: var(--text-color-light);
+}
+
+
+.group-butons .btn-custom:hover,
+.btn-custom:hover {
+  border: 1px solid var(--color-dark);
+
+}
+
+.btn-custom i:hover {
+  color: var(--color-dark);
+}
+
+/* Seccion sobre mi */
+
+.sec-about-mi {
+  width: 100%;
+  min-height: 50vh;
+}
+
+.about-mi-text .info-text {
+  height: 100%;
+}
+
+
+
+@media (max-width:469px) {
+  .text-wrapper .text-animation {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:425px) {
+  .text-wrapper .text-animation {
+    font-size: 1.5rem;
+  }
+
+}
