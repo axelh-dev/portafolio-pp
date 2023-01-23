@@ -1,6 +1,6 @@
 :root {
-  --color-dark: #111F4D;
-  --text-color-light: #F2F4F7;
+  --color-dark: #1D3557;
+  --text-color-light: #F1FAEE;
 }
 
 
@@ -15,7 +15,7 @@
 }
 
 .nav-custom .navbar-custom .nav-list a:hover {
-  color: #E43A19;
+  color: #E63946;
 }
 
 .navbar .nav-custom .navbar-custom {
@@ -45,7 +45,7 @@
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #F2F4F7;
+  background: #F1FAEE;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -124,7 +124,7 @@
   border-radius: 50%;
   left: 10%;
   bottom: 15%;
-  box-shadow: inset 8px -4px 0px 0px #E43A19;
+  box-shadow: inset 8px -4px 0px 0px #E63946;
   background: var(--background);
   transition: .5s;
 }
@@ -135,11 +135,11 @@ input:checked+.slider {
 
 input:checked+.slider:before {
   transform: translateX(100%);
-  box-shadow: inset 15px -4px 0px 15px #E43A19;
+  box-shadow: inset 15px -4px 0px 15px #E63946;
 }
 
 main {
-  background: #F2F4F7;
+  background: #F1FAEE;
 }
 
 .sec-home-mi {
@@ -159,7 +159,7 @@ main {
 
 .bi-hand-index-fill {
   font-size: 2.5rem;
-  color: #111F4D;
+  color: var(--color-dark);
 }
 
 @keyframes moveUpAndDown {
@@ -249,6 +249,12 @@ main {
   height: 100%;
 }
 
+
+.sec-proyects{
+  background-image: url(../assets/img/bac-about-mi.svg);
+  background-repeat: no-repeat; 
+  min-height: 80vh;
+}
 
 
 @media (max-width:469px) {
