@@ -22,6 +22,7 @@
 .navbar .nav-custom .navbar-custom {
   align-items: center;
   margin: 0 auto;
+
 }
 
 .icon-buton {
@@ -227,7 +228,7 @@ main {
 }
 
 .group-butons .btn-custom {
-  padding: .7rem;
+  padding: 8px;
   text-decoration: none;
   border-radius: 30px;
   background-color: var(--color-dark);
@@ -273,7 +274,7 @@ main {
 
 @media (max-width:425px) {
   .text-wrapper .text-animation {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
 }
