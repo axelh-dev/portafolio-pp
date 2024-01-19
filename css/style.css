@@ -259,10 +259,8 @@ main {
 
 
 .sec-proyects {
-  /* background-image: url(../assets/img/bac-about-mi.svg); */
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 80vh;
 }
 
 
@@ -277,4 +275,8 @@ main {
     font-size: 1.4rem;
   }
 
+}
+
+.colored{
+  padding: 2px;
 }
