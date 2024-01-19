@@ -1,11 +1,15 @@
 :root {
+  --color-background: #FFFFFF;
   --color-dark: #1D3557;
   --text-color-light: #F1FAEE;
 }
 
 
-.img-home img {
+.img-home {
   max-width: 220px;
+  color: var(--text-color-light) !important;
+  font-weight: 600;
+  font-size: 1.4rem !important;
 }
 
 .nav-custom .navbar-custom .nav-list a {
@@ -13,7 +17,6 @@
   color: var(--text-color-light);
   font-weight: 600;
 }
-
 
 .nav-custom .navbar-custom .nav-list a:hover {
   color: #E63946;
@@ -140,8 +143,8 @@ input:checked+.slider:before {
   box-shadow: inset 15px -4px 0px 15px #E63946;
 }
 
-main {
-  background: #F1FAEE;
+body {
+  background: var(--color-background);
 }
 
 .sec-home-mi {
@@ -279,4 +282,14 @@ main {
 
 .colored{
   padding: 2px;
+}
+
+
+.card-custom  { 
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid var(--color-dark);
+}
+.card-custom .card-img-top {
+  border-radius: 10px;
 }
