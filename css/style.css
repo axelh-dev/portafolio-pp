@@ -1,19 +1,25 @@
 :root {
   --color-dark: #1D3557;
-  --text-color-light: #F1FAEE;
+  --color-sec: #e63946;
+  --text-color-ter: #F1FAEE;
+  --text-color-cuar: #457b9d;
+  --text-color-quin: #a8dadc;
+  --color-background: #FFFFFF;
 }
 
 
-.img-home img {
+.img-home {
   max-width: 220px;
+  color: var(--text-color-ter) !important;
+  font-weight: 600;
+  font-size: 1.4rem !important;
 }
 
 .nav-custom .navbar-custom .nav-list a {
   font-size: 1.1rem;
-  color: var(--text-color-light);
+  color: var(--text-color-ter);
   font-weight: 600;
 }
-
 
 .nav-custom .navbar-custom .nav-list a:hover {
   color: #E63946;
@@ -26,7 +32,7 @@
 }
 
 .icon-buton {
-  color: var(--text-color-light);
+  color: var(--text-color-ter);
   font-size: 2rem;
 }
 
@@ -140,8 +146,8 @@ input:checked+.slider:before {
   box-shadow: inset 15px -4px 0px 15px #E63946;
 }
 
-main {
-  background: #f7f7f8;
+body {
+  background: var(--color-background);
 }
 
 .sec-home-mi {
@@ -228,11 +234,11 @@ main {
 }
 
 .group-butons .btn-custom {
-  padding: 8px;
+  padding: 10px;
   text-decoration: none;
   border-radius: 30px;
   background-color: var(--color-dark);
-  color: var(--text-color-light);
+  color: var(--text-color-ter);
 }
 
 
@@ -259,8 +265,7 @@ main {
 
 
 .sec-proyects {
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--text-color-ter);
 }
 
 
@@ -279,4 +284,13 @@ main {
 
 .colored{
   padding: 2px;
+}
+
+
+.card-custom  { 
+  border-radius: 10px;
+  padding: 10px;
+}
+.card-custom .card-img-top {
+  border-radius: 10px;
 }
