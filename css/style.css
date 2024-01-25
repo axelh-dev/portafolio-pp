@@ -157,18 +157,18 @@ body {
 .contain-hand {
   position: absolute;
   bottom: 0;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   left: 50%;
 }
 
 .hand-sec {
-  
+
   border-radius: 10px;
   width: 40px;
   height: 40px;
 
   animation: moveUpAndDown 800ms ease-in-out infinite;
-   
+
 }
 
 .bi-hand-index-fill {
@@ -282,15 +282,16 @@ body {
 
 }
 
-.colored{
+.colored {
   padding: 2px;
 }
 
 
-.card-custom  { 
+.card-custom {
   border-radius: 10px;
   padding: 10px;
 }
+
 .card-custom .card-img-top {
   border-radius: 10px;
 }
@@ -299,18 +300,51 @@ body {
 
 
 
-.footer-custom{
+.footer-custom {
   background-color: var(--color-dark);
   width: 100%;
   height: 80px;
 }
-.footer-customa a{
-text-decoration: none !important;
+
+.footer-customa a {
+  text-decoration: none !important;
 
 }
 
 
-
-.devicon-linkedin-plain{
+.devicon-linkedin-plain {
   color: var(--text-color-ter);
+}
+
+.sec-contac-me {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.sec-contac-me form{
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group{
+  width: 100%;
+}
+
+.info-correos{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width:425px) {
+  .sec-contac-me form{
+    width: 90%;
+  }
 }
