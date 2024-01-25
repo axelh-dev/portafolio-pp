@@ -326,25 +326,25 @@ body {
 }
 
 
-.sec-contac-me form{
-  width: 400px;
+.sec-contac-me form {
+  width: 50%;
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form-group{
+.form-group {
   width: 100%;
 }
 
-.info-correos{
+.info-correos {
   display: flex;
   flex-direction: column;
 }
 
-@media (max-width:425px) {
-  .sec-contac-me form{
+@media (max-width:699px) {
+  .sec-contac-me form {
     width: 90%;
   }
 }
