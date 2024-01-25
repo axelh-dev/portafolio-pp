@@ -314,9 +314,14 @@ body {
 
 }
 
-
-.devicon-linkedin-plain {
-  color: var(--text-color-ter);
+.sec-redes{
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bi-linkedin, .bi-whatsapp {
+  color: var(--text-color-ter) !important;
 }
 
 .sec-contac-me {

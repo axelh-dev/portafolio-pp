@@ -205,29 +205,32 @@
             <h1>Contactame</h1>
             <form id="miFormulario">
                 <div class="form-group info-correos">
-                    <label for="name">Nombre
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Nombre" required>
+                    <label for="name" class="p-1">Nombre
+                        <input type="text" id="name" name="name" class="form-control" placeholder="" required>
                     </label>
-                    <label for="email">Correo
-                        <input type="email" id="email" name="email" class="form-control"
-                            placeholder="Correo electrónico" required>
+                    <label for="email" class="p-1">Correo
+                        <input type="email" id="email" name="email" class="form-control" placeholder="" required>
                     </label>
                 </div>
-                <div class="form-group mb-2">
+                <div class="form-group mb-2 p-1">
                     Mensaje
-                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" class="form-control" rows="10"
+                    <textarea id="mensaje" name="mensaje" placeholder="" class="form-control" rows="10"
                         required></textarea>
                 </div>
                 <button type="button" onclick="enviarCorreo()" class="btn btn-primary btn-block">Enviar
-                    </button>
+                </button>
             </form>
         </section>
 
-        <section class="footer-custom  d-flex justify-content-start p-3 align-items-center ">
-            <a href="https://www.linkedin.com/in/axel-herrera-34a127247/" class="text-decoration-none">
-                <i class="devicon-linkedin-plain fs-3"></i>
-            </a>
-
+        <section class="footer-custom  d-flex justify-content-start  p-3 align-items-center ">
+            <div class="sec-redes">
+                <a href="https://www.linkedin.com/in/axel-herrera-34a127247/" class="text-decoration-none">
+                    <i class="bi bi-linkedin fs-3"></i>
+                </a>
+                <a href="https://wa.me/50231034642" class="text-decoration-none">
+                    <i class="bi bi-whatsapp fs-3"></i>
+                </a>
+            </div>
         </section>
 
 
@@ -237,13 +240,13 @@
     function enviarCorreo() {
         Email.send({
             SecureToken: "9536a832-10e5-47b8-ae66-a378ed15f823",
-            From:"axelherreram7@gmail.com",
+            From: "axelherreram7@gmail.com",
             To: "axelherreram7@gmail.com",
             Subject: "Contacto",
-            Body: 
-            "Nombre: " + document.getElementById("name").value  + "<br>" +
-            "Correo: " + document.getElementById("email").value + "<br>" +
-            "Mensaje: " + document.getElementById("mensaje").value 
+            Body:
+                "Nombre: " + document.getElementById("name").value + "<br>" +
+                "Correo: " + document.getElementById("email").value + "<br>" +
+                "Mensaje: " + document.getElementById("mensaje").value
         }).then(
             message => alert("Correo enviado exitosamente: " + message)
         );
@@ -256,8 +259,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-
 <script src="../js/app.js"></script>
-<!-- Animacion letters -->
 
 </html>
