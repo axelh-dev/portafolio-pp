@@ -241,9 +241,9 @@
             To: "axelherreram7@gmail.com",
             Subject: "Contacto",
             Body: 
-            "Nombre" + document.getElementById("name").value  + "<br>" +
-            "Correo" + document.getElementById("email").value + "<br>" +
-            "Mensaje" + document.getElementById("mensaje").value 
+            "Nombre: " + document.getElementById("name").value  + "<br>" +
+            "Correo: " + document.getElementById("email").value + "<br>" +
+            "Mensaje: " + document.getElementById("mensaje").value 
         }).then(
             message => alert("Correo enviado exitosamente: " + message)
         );
