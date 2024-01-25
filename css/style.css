@@ -265,9 +265,12 @@ body {
 
 
 .sec-proyects {
-  background-color: var(--text-color-ter);
+  background-color: var(--color-dark);
+  color: var(--text-color-ter);
 }
-
+.django{
+  color: var(--text-color-ter) !important;
+}
 
 @media (max-width:469px) {
   .text-wrapper .text-animation {
